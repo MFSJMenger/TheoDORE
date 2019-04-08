@@ -11,6 +11,7 @@ version = '2.0.1'
 requirements = ['']
 
 scripts = [
+    'bin/theoinp',
     'bin/analyze_correlations.py',
     'bin/analyze_NOs.py',
     'bin/analyze_sden.py',

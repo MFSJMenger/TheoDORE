@@ -109,11 +109,8 @@ class OmFrag_options(Colt):
     def __init__(self, settings, state_list, maxOm):
         self.state_list = state_list
         self.settings = settings
-        if settings['vmax'] is not None:
-            self.maxOm = settings['vmax']
-        else:
-            self.maxOm = maxOm
-
+        self.maxOm = settings['vmax'] if settings['vmax'] is not None else maxOm
+        
     def plot(self):
         hfname = 'OmFrag.html'
         hfile = lib_file.htmlfile(hfname)
